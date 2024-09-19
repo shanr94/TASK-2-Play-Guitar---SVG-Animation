@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.container {
+  width: 30%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.image {
+  width: 100%;
+  height: 40vw;
+  background: url(https://www.georgetownmusicstore.com/wp-content/uploads/2023/08/LEftyRaven3-scaled.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  rotate: 90deg;
+}
+h2 {
+  font-size: 4.5rem;
+  padding-bottom: 1rem;
+}
+#strings {
+  position: absolute;
+  top: 49%;
+  left: 5%;
+  width: 100%;
+  height: 6.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#musicIconContainer {
+  display: flex;
+  position: absolute;
+  gap: 1rem;
+  top: -35%;
+  left: 15%;
+}
+.musicNote {
+  position: relative;
+  filter: invert(1);
+  width: 35px;
+  top: -10%;
+  display: none;
+}
+.musicNote:nth-child(odd) {
+  top: 15px;
+}
+svg {
+  width: 700px;
+  height: 45x;
+  background-color: #1c1b1b7a;
+}

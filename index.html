@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 | Play Guitar - SVG Animation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <h2>Play Guitar</h2>
+        <div class="container">
+            <div class="image"></div>
+            <div id="strings">
+                <div id="musicIconContainer">
+                    <img src="./music-note.png" alt="" class="musicNote note1">
+                    <img src="./music-note.png" alt="" class="musicNote note2">
+                    <img src="./music-note.png" alt="" class="musicNote note3">
+                    <img src="./music-note.png" alt="" class="musicNote note4">
+                    <img src="./music-note.png" alt="" class="musicNote note5">
+                    <img src="./music-note.png" alt="" class="musicNote">
+                </div>
+                <svg id="yellowString">
+                    <path d="M 0 30 Q 350 30 700 29" fill="transparent" stroke="#08E8DE" stroke-width="4"></path>
+                </svg>
+                <svg id="orangeString">
+                    <path d="M 0 25 Q 700 22 700 20" fill="transparent" stroke="#FFAA1D" stroke-width="4"></path>
+                </svg>
+                <svg id="greenString">
+                    <path d="M 0 23 Q 700 16 700 9" fill="transparent" stroke="#66FF00" stroke-width="4"></path>
+                </svg>
+                <svg id="redString">
+                    <path d="M 0 20 Q 700 2 700 2" fill="transparent" stroke="red" stroke-width="4"></path>
+                </svg>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+
+</html>
